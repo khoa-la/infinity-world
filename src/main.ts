@@ -5,6 +5,6 @@ const game = new Game();
 if (game) {
   if (game.view)
     document
-      .querySelector(".game")
-      .append(game.view.renderer.instance.domElement);
+      .querySelector(".game")!
+      .append(game!.view!.renderer!.instance!.domElement);
 }
